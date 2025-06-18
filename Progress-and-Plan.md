@@ -9,11 +9,11 @@ Originally, we want to optimize this function:
 $$ min_{s} \sum_{IP_i}^{2^N} \frac{1}{2^N} \mid \sum_{compressor_j} MED_{i, j}(s) \mid $$
 
 where s is a discrete variable, representing the possible bijective connection between compressors. This problem is solved by MIP solver.
-Through **continuous relaxation**, we can turn it into a continuous optimization problem, and use approaches like gradient descent to solve it more efficiently.
+Through **continuous relaxation**, we can turn it into a continuous optimization problem, and use approaches like gradient descent to solve it more efficiently. Then its mathematical meaning is the expectation of the absolute sum of the MED. In order to deal with the absolute operation, we square the function.
 
-The objective function after relaxation is
+The objective function becomes
 
-$$ min_{p} \sum_{IP_i}^{2^N} \frac{1}{2^N}  \mid \sum_{compressor_j} MED_{i, j}(p) \mid $$
+$$ min_{p} \sum_{IP_i}^{2^N} \frac{1}{2^N} \cdot (\sum_{compressor_j} MED_{i, j}(p) )^2 $$
 
 where p represents the probability of each permutation is chosen.
 

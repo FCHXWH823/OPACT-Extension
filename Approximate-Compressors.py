@@ -80,7 +80,7 @@ def simulate_AC(verilog, input_ports=["x1","x2","x3","x4"], output_ports=["C","S
     print_tt(bits_vec,input_ports,output_ports)
 
 def simulate_AC(verilog, input_ports=["x1","x2","x3","x4"], output_ports=["C","S"]):
-    design = ys.Design()
+    # design = ys.Design()
     # ys.run_pass(f"read_verilog {verilog}.v", design)
     # ys.run_pass("aigmap", design)
     # ys.run_pass(f"write_aiger {verilog}.aig", design)

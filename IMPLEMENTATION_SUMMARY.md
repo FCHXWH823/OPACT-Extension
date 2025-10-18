@@ -53,7 +53,7 @@ The new functions are mathematically equivalent to the original when all input p
 
 **AC32_ew1 Example:**
 - pairs.py: `-p**2 + 2*p`
-- multi_input_pairs.py with p1=p2=p3=p: `2*p*(1-p)^2 + 3*p^2*(1-p) + p^3 = -p^2 + 2*p` ✓
+- multi_input_pairs.py with p1=p2=p3=p: `2*p*(1-p)**2 + 3*p**2*(1-p) + p**3 = -p**2 + 2*p` ✓
 
 ## How to Use
 

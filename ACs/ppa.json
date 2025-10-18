@@ -1,0 +1,82 @@
+{
+    "AC32_ew1": {
+        "area": 2.66,
+        "inputs": ["x1", "x2", "x3"],
+        "outputs": ["w2", "w1"]
+    },
+    "AC42_ew1": {
+        "area": 4.788,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["w2", "w1"]
+    },
+    "EC22": {
+        "area": 2.66,
+        "inputs": ["x1", "x2"],
+        "outputs": ["C", "S"]
+    },
+    "EC32": {   
+        "area": 5.054,
+        "inputs": ["x1", "x2", "x3"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw10": {
+        "area": 3.192,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw11": {
+        "area": 3.99,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw12": {
+        "area": 7.714,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw2": {
+        "area": 7.182,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw3": {
+        "area": 10.374,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw4": {
+        "area": 8.246,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw5": {
+        "area": 6.916,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw6": {
+        "area": 8.246,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw7": {
+        "area": 6.118,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw8": {
+        "area": 3.99,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw9": {
+        "area": 5.852,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    },
+    "AC42_uw1": {
+        "area": 5.852,
+        "inputs": ["x1", "x2", "x3", "x4"],
+        "outputs": ["C", "S"]
+    }
+}

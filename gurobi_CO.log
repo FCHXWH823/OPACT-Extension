@@ -1,0 +1,121 @@
+
+Gurobi 12.0.2 (mac64[arm]) logging started Tue Jul  8 21:08:22 2025
+
+Set parameter LogFile to value "gurobi_CO.log"
+Set parameter MIPFocus to value 1
+Set parameter NumericFocus to value 1
+Set parameter Presolve to value 2
+Set parameter TimeLimit to value 10
+Set parameter Heuristics to value 0.4
+Set parameter NonConvex to value 2
+Warning: Q constraint 0 doesn't have a name
+Gurobi Optimizer version 12.0.2 build v12.0.2rc0 (mac64[arm] - Darwin 23.6.0 23G80)
+
+CPU model: Apple M3 Pro
+Thread count: 12 physical cores, 12 logical processors, using up to 12 threads
+
+Non-default parameters:
+TimeLimit  10
+Heuristics  0.4
+MIPFocus  1
+NonConvex  2
+NumericFocus  1
+Presolve  2
+
+Optimize a model with 4064 rows, 6926 columns and 7810 nonzeros
+Model fingerprint: 0x7dfc15fb
+Model has 1498 quadratic constraints
+Variable types: 1894 continuous, 5032 integer (5032 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [1e+00, 4e+00]
+  QLMatrix range   [1e+00, 2e+00]
+  Objective range  [1e+00, 2e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e-01, 1e+00]
+Warning: Model contains large objective coefficients
+Presolve removed 3259 rows and 4378 columns
+Presolve time: 0.34s
+Presolved: 5507 rows, 3659 columns, 17656 nonzeros
+Presolved model has 56 SOS constraint(s)
+Presolved model has 516 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 1766 continuous, 1893 integer (1893 binary)
+Found heuristic solution: objective 1636071.3388
+Root relaxation presolve removed 482 rows and 191 columns
+Root relaxation presolved: 5025 rows, 3468 columns, 16716 nonzeros
+
+
+Use crossover to convert LP symmetric solution to basic solution...
+
+Root relaxation: objective 1.296441e+05, 1524 iterations, 0.03 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 129644.082    0  326 1636071.34 129644.082  92.1%     -    0s
+     0     0 129644.082    0  372 1636071.34 129644.082  92.1%     -    0s
+     0     0 129644.082    0  372 1636071.34 129644.082  92.1%     -    0s
+     0     0 158377.583    0  502 1636071.34 158377.583  90.3%     -    0s
+     0     0 158377.583    0  502 1636071.34 158377.583  90.3%     -    0s
+H    0     0                    1450184.0375 158377.583  89.1%     -    0s
+H    0     0                    1450123.3165 158377.583  89.1%     -    0s
+     0     0 158377.583    0  477 1450123.32 158377.583  89.1%     -    0s
+H    0     0                    1449721.9591 158377.583  89.1%     -    0s
+     0     0 165481.604    0  484 1449721.96 165481.604  88.6%     -    0s
+     0     0 165481.604    0  484 1449721.96 165481.604  88.6%     -    0s
+     0     0 166467.711    0  467 1449721.96 166467.711  88.5%     -    0s
+     0     0 167683.910    0  548 1449721.96 167683.910  88.4%     -    0s
+     0     0 167683.910    0  548 1449721.96 167683.910  88.4%     -    0s
+     0     0 167729.138    0  532 1449721.96 167729.138  88.4%     -    0s
+     0     0 167729.138    0  532 1449721.96 167729.138  88.4%     -    0s
+     0     0 168864.113    0  566 1449721.96 168864.113  88.4%     -    0s
+     0     0 196826.564    0  660 1449721.96 196826.564  86.4%     -    0s
+     0     0 196826.564    0  656 1449721.96 196826.564  86.4%     -    0s
+     0     0 212798.898    0  498 1449721.96 212798.898  85.3%     -    1s
+     0     0 212798.898    0  481 1449721.96 212798.898  85.3%     -    1s
+     0     0 212798.898    0  499 1449721.96 212798.898  85.3%     -    1s
+     0     0 212798.898    0  505 1449721.96 212798.898  85.3%     -    1s
+     0     0 215373.956    0  486 1449721.96 215373.956  85.1%     -    1s
+     0     0 216953.282    0  502 1449721.96 216953.282  85.0%     -    1s
+     0     0 217185.328    0  501 1449721.96 217185.328  85.0%     -    1s
+     0     0 218457.018    0  474 1449721.96 218457.018  84.9%     -    1s
+     0     0 219064.104    0  515 1449721.96 219064.104  84.9%     -    1s
+     0     0 219621.736    0  518 1449721.96 219621.736  84.9%     -    1s
+     0     0 219652.439    0  516 1449721.96 219652.439  84.8%     -    1s
+     0     0 225430.395    0  424 1449721.96 225430.395  84.5%     -    1s
+H    0     0                    1414918.7349 225430.395  84.1%     -    1s
+H    0     0                    1412118.4598 225430.395  84.0%     -    2s
+H    0     0                    1380223.4583 225430.395  83.7%     -    2s
+     0     2 225430.395    0  409 1380223.46 225430.395  83.7%     -    2s
+H    1     4                    1380088.4499 225438.729  83.7%   302    2s
+H    8    16                    1379925.8952 229335.359  83.4%   154    2s
+H    9    16                    1377601.8040 229335.359  83.4%   164    2s
+H   12    16                    1346100.0294 230106.653  82.9%   187    2s
+H   32    30                    1346053.2883 233524.721  82.7%   135    2s
+H   80    73                    1346053.0846 233984.799  82.6%  65.8    2s
+H   82    73                    1344501.0220 233984.799  82.6%  64.3    2s
+H   86    73                    1342479.5099 233984.799  82.6%  61.6    2s
+H  198   165                    1340804.9045 233984.799  82.5%  38.1    3s
+H  199   165                    1312822.6428 233984.799  82.2%  38.0    3s
+H  200   165                    1310994.2580 233984.799  82.2%  38.0    3s
+H  365   302                    1309481.3953 233984.799  82.1%  29.9    3s
+H  385   325                    1309481.3923 233984.799  82.1%  29.5    3s
+H  408   338                    1309412.6174 233984.799  82.1%  29.1    3s
+H  409   338                    1275303.8953 233984.799  81.7%  29.0    3s
+H  824   744                    1275210.6588 233984.799  81.7%  24.2    4s
+H  826   744                    1274905.7555 233984.799  81.6%  24.2    4s
+H  827   744                    1266799.6536 233984.799  81.5%  24.2    4s
+H  865   768                    1266799.6512 233984.799  81.5%  23.7    4s
+
+Gurobi 12.0.2 (mac64[arm]) logging started Tue Jul  8 21:10:09 2025
+
+Set parameter LogFile to value "gurobi_CO.log"
+Set parameter MIPFocus to value 1
+Set parameter NumericFocus to value 1
+Set parameter Presolve to value 2
+Set parameter TimeLimit to value 10
+Set parameter Heuristics to value 0.4
+Set parameter NonConvex to value 2

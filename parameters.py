@@ -11,7 +11,8 @@ torch.manual_seed(0)
 
 N_COL   = 31     # partial-product width  (2·n_bits-1 for an n×n multiplier)
 N_STAGE = 4      # safe upper bound on CSA layers
-BATCH   = 64     # input patterns per SGD step
+N_COL += N_STAGE
+BATCH   = 1024     # input patterns per SGD step
 
 # compressor meta-data --------------------------------------------------
 #  k :     0            1            2              3               4
@@ -29,29 +30,24 @@ def fa_S(pi): return 3 * pi * (1 - pi) ** 2 + pi ** 3
 def fa_C(pi): return 3 * pi ** 2 * (1 - pi) + pi ** 3
 
 # Example approximate 3:2  (swap in your real cell)
-def a32_S(pi): return 2 * pi * (1 - pi) ** 2 + pi ** 3
-def a32_C(pi): return 3 * pi ** 2 * (1 - pi) + pi ** 3
+def a32_S(pi): return 2 * pi - pi ** 2
+def a32_C(pi): return pi + pi ** 2 - pi ** 3
 
 # Example approximate 4:2  (swap in your real cell)
 def a42_S(pi):
     return (
-          4 * pi * (1 - pi) ** 3
-        + 6 * pi ** 2 * (1 - pi) ** 2
-        + 4 * pi ** 3 * (1 - pi)
-        + pi ** 4
+          2 * pi + 4 * pi ** 2 - 4 * pi ** 3 + pi ** 4
     )
 
 def a42_C(pi):
     return (
-          6 * pi ** 2 * (1 - pi) ** 2
-        + 4 * pi ** 3 * (1 - pi)
-        + pi ** 4
+          2 * pi - 2 * pi ** 3 + pi ** 4
     )
 
 F_S = (fa_S, ha_S, a32_S, a42_S, lambda pi: pi)          # k-order list
 F_C = (fa_C, ha_C, a32_C, a42_C, lambda pi: pi * 0)       # dummy no carry
 
-n_bits = (N_COL + 1) // 2          # derive operand width from N_COL
+n_bits = (N_COL + 1 - N_STAGE) // 2          # derive operand width from N_COL
 
 # ---------------------------------------------------------------------------
 #  Error (MED) of ONE approximate compressor under input probability π

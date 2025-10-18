@@ -1,0 +1,1937 @@
+{
+  "stage0": [
+    {
+      "col_idx": 0,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 1,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 2,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 3,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 4,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 5,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 6,
+      "bits": 7,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 7,
+      "bits": 8,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 2,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 8,
+      "bits": 9,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 9,
+      "bits": 10,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 3,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 10,
+      "bits": 11,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 2,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 11,
+      "bits": 12,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 6,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 12,
+      "bits": 13,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 3,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 13,
+      "bits": 14,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 3,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 14,
+      "bits": 15,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 3,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 15,
+      "bits": 16,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 2,
+        "approx_3to2": 3,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 16,
+      "bits": 15,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 3,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 17,
+      "bits": 14,
+      "alloc": {
+        "exact_3to2": 2,
+        "exact_2to2": 1,
+        "approx_3to2": 2,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 18,
+      "bits": 13,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 4,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 19,
+      "bits": 12,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 2,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 20,
+      "bits": 11,
+      "alloc": {
+        "exact_3to2": 3,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 21,
+      "bits": 10,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 3,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 22,
+      "bits": 9,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 23,
+      "bits": 8,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 2,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 24,
+      "bits": 7,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 25,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 2,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 26,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 27,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 28,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 29,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 30,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 31,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 32,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 33,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 34,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    }
+  ],
+  "stage1": [
+    {
+      "col_idx": 0,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 1,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 2,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 3,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 4,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 5,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 6,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 7,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 8,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 9,
+      "bits": 9,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 3,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 10,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 11,
+      "bits": 7,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 12,
+      "bits": 13,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 2,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 13,
+      "bits": 11,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 5,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 14,
+      "bits": 10,
+      "alloc": {
+        "exact_3to2": 2,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 15,
+      "bits": 10,
+      "alloc": {
+        "exact_3to2": 3,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 16,
+      "bits": 12,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 17,
+      "bits": 8,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 18,
+      "bits": 10,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 19,
+      "bits": 11,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 3,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 20,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 21,
+      "bits": 9,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 3,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 22,
+      "bits": 8,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 23,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 24,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 25,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 26,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 27,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 28,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 29,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 30,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 31,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 32,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 33,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 34,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    }
+  ],
+  "stage2": [
+    {
+      "col_idx": 0,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 1,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 2,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 3,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 4,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 5,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 6,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 7,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 8,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 9,
+      "bits": 7,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 3,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 10,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 11,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 12,
+      "bits": 9,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 2,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 13,
+      "bits": 7,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 14,
+      "bits": 10,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 2,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 15,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 3,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 16,
+      "bits": 10,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 17,
+      "bits": 7,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 18,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 19,
+      "bits": 8,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 20,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 21,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 22,
+      "bits": 8,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 2,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 23,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 24,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 25,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 26,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 27,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 28,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 29,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 30,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 31,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 32,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 33,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 34,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    }
+  ],
+  "stage3": [
+    {
+      "col_idx": 0,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 1,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 2,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 3,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 4,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 5,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 6,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 7,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 8,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 9,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 10,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 11,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 12,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 13,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 2,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 14,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 15,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 16,
+      "bits": 9,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 3,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 17,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 18,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 19,
+      "bits": 5,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 20,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 1,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 21,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 22,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 1,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 23,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 24,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 1,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 25,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 26,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 27,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 28,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 29,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 30,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 1,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 31,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 32,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 33,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 34,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    }
+  ],
+  "stage4": [
+    {
+      "col_idx": 0,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 1,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 2,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 3,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 4,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 5,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 6,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 3
+      }
+    },
+    {
+      "col_idx": 7,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 8,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 9,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 10,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 11,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 12,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 4
+      }
+    },
+    {
+      "col_idx": 13,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 3
+      }
+    },
+    {
+      "col_idx": 14,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 4
+      }
+    },
+    {
+      "col_idx": 15,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 4
+      }
+    },
+    {
+      "col_idx": 16,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 6
+      }
+    },
+    {
+      "col_idx": 17,
+      "bits": 6,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 6
+      }
+    },
+    {
+      "col_idx": 18,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 3
+      }
+    },
+    {
+      "col_idx": 19,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 3
+      }
+    },
+    {
+      "col_idx": 20,
+      "bits": 3,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 3
+      }
+    },
+    {
+      "col_idx": 21,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 22,
+      "bits": 4,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 4
+      }
+    },
+    {
+      "col_idx": 23,
+      "bits": 1,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 1
+      }
+    },
+    {
+      "col_idx": 24,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 25,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 26,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 27,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 28,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 29,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 30,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 31,
+      "bits": 2,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 2
+      }
+    },
+    {
+      "col_idx": 32,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 33,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    },
+    {
+      "col_idx": 34,
+      "bits": 0,
+      "alloc": {
+        "exact_3to2": 0,
+        "exact_2to2": 0,
+        "approx_3to2": 0,
+        "approx_4to2": 0,
+        "dummy": 0
+      }
+    }
+  ]
+}

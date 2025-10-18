@@ -1,0 +1,4 @@
+Weight : 0.01
+FA number : 60	HA number : 1	AC32 number : 69	AC42 number : 33
+Analytical error of opt1 : 134144	Analytical error of opt2 : 396284
+============================================================

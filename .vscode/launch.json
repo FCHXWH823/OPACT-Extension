@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            // "program": "/Users/fch/Python/OPACT-Extension/ConnectionOpt_MIP/OPACT.out",
+            "program": "/Users/fch/Python/OPACT-Extension/General_OPACT_MIP/GeneralOPACT.out",
+            "args": [
+                "./",
+                "0",
+                "100",
+                "0",
+                "0",
+                "1",
+                "1",
+                "1",
+                "./SpiceNetlists/"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            // "preLaunchTask": "OPACT MIP",
+            "preLaunchTask": "General OPACT MIP"
+        }
+    ]
+}

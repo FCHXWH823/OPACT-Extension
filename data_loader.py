@@ -10,11 +10,11 @@ def make_loader(n_bits: int, batch: int = 64, exhaustive: bool = False):
     exhaustive : if True, enumerate a×b pairs systematically starting from 0;
                  if False, sample operands uniformly at random.
     """
-    n_col = 2 * n_bits - 1                 # should equal N_COL globally
+    n_col = 2 * n_bits - 1 + N_STAGE                 # should equal N_COL globally
     assert n_col == N_COL, "N_COL and n_bits inconsistent"
 
     # ------------- constant P0 : [1,2,3,...,N,N-1,...,1] -------------------
-    pattern = [min(j + 1, 2 * n_bits - 1 - j, n_bits) for j in range(n_col)]
+    pattern = [max(min(j + 1, 2 * n_bits - 1 - j, n_bits), 0) for j in range(n_col)]
     P0_const = torch.tensor(pattern, dtype=torch.float, device=device)  # [n_col]
 
     # ------------- helper to get U0 for ONE operand pair -------------------
@@ -39,7 +39,7 @@ def make_loader(n_bits: int, batch: int = 64, exhaustive: bool = False):
     # ------------- generator ------------------------------------------------
     def loader():
         a = b = 0
-        total = 1 << n_bits
+        total = (1 << n_bits)
         while True:
             U_batch = []
             for _ in range(batch):
@@ -47,10 +47,10 @@ def make_loader(n_bits: int, batch: int = 64, exhaustive: bool = False):
                     # systematic enumeration
                     U_batch.append(one_counts(a, b))
                     # advance lexicographically
-                    b += 1
+                    b -= 1
                     if b == total:
-                        b = 0
-                        a = (a + 1) % total
+                        b = (1 << n_bits) - 1
+                        a = (a - 1) if a > 0 else (1 << n_bits) -1
                 else:
                     # uniform random sampling
                     a_rand = torch.randint(0, total, ()).item()

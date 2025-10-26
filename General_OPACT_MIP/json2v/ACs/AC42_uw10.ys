@@ -1,0 +1,8 @@
+
+read_verilog -sv /Users/fch/Python/OPACT-Extension/ACs/AC42_uw10.v
+read_verilog -sv /Users/fch/Python/OPACT-Extension/General_OPACT_MIP/json2v/ACs/myhdl_AC42_uw10.v
+prep; proc; opt; memory;
+clk2fflogic;
+miter -equiv -flatten AC42_uw10 myhdl_AC42_uw10 miter
+sat -seq 20 -verify -prove trigger 0 -show-inputs -show-outputs -set-init-zero miter
+    

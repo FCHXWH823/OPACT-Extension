@@ -159,7 +159,7 @@ class CompressorNetwork:
         return (p0, C)
     
 class CompressorNetworkTrainer(CompressorNetwork):
-    def __init__(self, csv_path="./AC_Allocation_test.csv", lambda_orth=20, num_epochs=500, batch_size=512, lr=1e-1, warmup_epochs=50, log_period=20, eval_period=20, print_period=5, tau_start=0.5, tau_end=0.5, save_dir='Training_log_s2_', train_loss_csv='loss.csv', eval_log='eval_diff.txt', final_log='final_diff.txt', conn_log_dir='./conn'):
+    def __init__(self, csv_path="./AC_Allocation_test.csv", lambda_orth=20, num_epochs=500, batch_size=512, lr=1e-1, warmup_epochs=50, log_period=20, eval_period=20, print_period=5, tau_start=0.5, tau_end=0.5, save_dir='Training_log_s2', train_loss_csv='loss.csv', eval_log='eval_diff.txt', final_log='final_diff.txt', conn_log_dir='./conn'):
         super().__init__(csv_path=csv_path)
         
         # === Training hyperparams ===
@@ -234,7 +234,7 @@ class CompressorNetworkTrainer(CompressorNetwork):
             f.write("# Training Info \n\n")
         
             # Training Configuration
-            f.write("## Training Configuration\n")
+            f.write("## Training Configuration\n\n")
             f.write(f"Lambda orth: {self.lambda_orth}\n")
             f.write(f"Batch size: {self.batch_size}\n")
             f.write(f"Number of epochs: {self.num_epochs}\n")
@@ -245,7 +245,7 @@ class CompressorNetworkTrainer(CompressorNetwork):
             f.write(f"Temperature (tau): {self.temp}\n\n")
             
             # Compressor Network Info
-            f.write("## Compressor Network Info\n")
+            f.write("## Compressor Network Info\n\n")
             f.write(f"Compressor allocation: {self.csv_path}\n")
             f.write(f"Total patterns: {self.total_patterns}\n")
             f.write(f"Number of stages: {self.N_STAGE}\n")
@@ -256,7 +256,7 @@ class CompressorNetworkTrainer(CompressorNetwork):
             f.write(f"Bit index per stage: {self.bit_index}\n\n")
             
             # Loss / logging
-            f.write("## Logging Info\n")
+            f.write("## Logging Info\n\n")
             f.write(f"Train loss CSV: {self.train_loss_csv}\n")
             f.write(f"Eval log: {self.eval_log}\n")
             f.write(f"Final log: {self.final_log}\n")

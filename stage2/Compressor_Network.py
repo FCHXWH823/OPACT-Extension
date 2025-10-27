@@ -229,7 +229,7 @@ class CompressorNetworkTrainer(CompressorNetwork):
         with open(self.final_log, mode='w') as f:
             f.write("# Final evaluation results after full training\n")
 
-        info_log = os.path.join(self.save_dir, "train_info.txt")
+        info_log = os.path.join(self.save_dir, "train_info.md")
         with open(info_log, 'w') as f:
             f.write("# Training Info \n\n")
         

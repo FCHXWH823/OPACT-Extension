@@ -9,9 +9,9 @@ else:
 
 torch.manual_seed(0)
 
-N_COL   = 31     # partial-product width  (2·n_bits-1 for an n×n multiplier)
-N_STAGE = 4      # safe upper bound on CSA layers
-BATCH   = 64     # input patterns per SGD step
+# N_COL   = 31     # partial-product width  (2·n_bits-1 for an n×n multiplier)
+# N_STAGE = 4      # safe upper bound on CSA layers
+# BATCH   = 2     # input patterns per SGD step
 
 # compressor meta-data --------------------------------------------------
 #  k :     0            1            2              3               4
@@ -51,7 +51,7 @@ def a42_C(pi):
 F_S = (fa_S, ha_S, a32_S, a42_S, lambda pi: pi)          # k-order list
 F_C = (fa_C, ha_C, a32_C, a42_C, lambda pi: pi * 0)       # dummy no carry
 
-n_bits = (N_COL + 1) // 2          # derive operand width from N_COL
+# n_bits = (N_COL + 1) // 2          # derive operand width from N_COL
 
 # ---------------------------------------------------------------------------
 #  Error (MED) of ONE approximate compressor under input probability π

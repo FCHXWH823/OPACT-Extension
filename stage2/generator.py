@@ -1,7 +1,8 @@
-import torch
+import torch, random
 from parameters import *
 
-# TODO: random seed
+torch.manual_seed(42)
+
 def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
     """
     Parameters:
@@ -13,7 +14,6 @@ def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
     Returns:
     - a loader that yields:
         {
-            P0: shape [N_COL], maximum number of bits in each column
             BITS: shape [B, N_COL, max_col_height], each position is 0 or 1
         }
     """
@@ -22,7 +22,7 @@ def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
     # assert n_col == N_COL, "N_COL and n_bits inconsistent"
     
     pattern = [min(j + 1, 2 * n_bits - 1 - j, n_bits) for j in range(n_col)]
-    P0_const = torch.tensor(pattern, dtype=torch.float, device=device)
+    # P0_const = torch.tensor(pattern, dtype=torch.float, device=device)
 
     def one_bitmap(a: int, b: int) -> torch.Tensor:
         """
@@ -34,7 +34,6 @@ def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
 
         cols = [[] for _ in range(n_col)]
         for i in range(n_bits):
-            if Ua[i] == 0: continue
             for j in range(n_bits):
                 col = i + j
                 bit = Ua[i] & Ub[j]
@@ -56,36 +55,34 @@ def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
             for _ in range(batch):
                 if exhaustive:
                     bits = one_bitmap(a, b)
+                    # print(f"Operands: a = {a:0{n_bits}b} ({a}), b = {b:0{n_bits}b} ({b})")
                     b += 1
                     if b == total:
                         b = 0
                         a = (a + 1) % total
                 else:
-                    a_rand = torch.randint(0, total, ()).item()
-                    b_rand = torch.randint(0, total, ()).item()
-                    # print(f"Operands: a = {a_rand:04b}, b = {b_rand:04b}")
-                    bits = one_bitmap(a_rand, b_rand)
+                    a = torch.randint(0, total, ()).item()
+                    b = torch.randint(0, total, ()).item()
+                    # print(f"Operands: a = {a:0{n_bits}b} ({a}), b = {b:0{n_bits}b} ({b})")
+                    bits = one_bitmap(a, b)
                 batch_bits.append(bits)
             BITS = torch.stack(batch_bits, dim=0)          # [B, N_COL, n_bits]
-            P0 = P0_const.expand(batch, -1)                # [B, N_COL]
-            yield P0, BITS
+            # P0 = P0_const.expand(batch, -1)                # [B, N_COL]
+            yield BITS
 
     return loader()
 
 # test the loader
 if __name__ == "__main__":
-    n_bits = 4
+    n_bits = 5
     N_COL = 2 * n_bits - 1  # should equal N_COL globally
     loader = IP_generator(n_bits=n_bits, batch=2)
-    P0, BITS = next(loader)
+    BITS = next(loader)
 
-    print("P0 shape:", P0.shape)  # [2, 7]
-    print("BITS shape:", BITS.shape)  # [2, 7, 4]
+    print("BITS shape:", BITS.shape)  # [Batch, N_COL, n_bits]
 
     for i in range(BITS.shape[0]):
         print(f"\nSample #{i}:")
-        P0_b = P0[i, :].tolist()
-        print(f"P0 = {P0_b}")
         for j in range(BITS.shape[1]):
             bits_in_col = BITS[i, j, :].tolist()
             print(f"  Col {j}: bits = {bits_in_col}")

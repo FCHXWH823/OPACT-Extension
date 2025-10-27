@@ -475,6 +475,38 @@ for step in range(6250):
             print(f"step {step:5d} | loss={loss.item():.3f} "
               f"| area={area_acc.item():.2f} err={err_acc.item():.4f} "
               f"| row-ok={ok_ratio:.3f} λ_row={λ_row(step):.2f} constraint={torch.relu(V - 2).sum():.2f} ",file=f)
+            
+    # ---------------------  CSV output for stage2  -----------------------
+    # import csv
+
+    # if step % 100 == 0:
+    #     with torch.no_grad(), open(f"./allocate_data/AC_Allocation_{step}.csv", "w", newline="", encoding="utf-8") as f:
+    #         writer = csv.writer(f)
+    #         writer.writerow(["stage", "comp_type", "col", "count"])  # header
+
+    #         p_final = torch.softmax(logits / tau, dim=-1)  # [S,C,5]
+
+    #         V = torch.tensor([min(j + 1, 2 * n_bits - 1 - j, n_bits)
+    #                         for j in range(N_COL)],
+    #                         dtype=torch.float, device=device).unsqueeze(0)   # [1,C]
+    #         U = torch.zeros_like(V)
+
+    #         names = ["ex-3:2", "ex-2:2", "ap-3:2", "ap-4:2", "dummy"]
+
+    #         for s in range(N_STAGE):
+    #             n_cols = [ste_counts(V[0, j], p_final[s, j]) for j in range(N_COL)]
+    #             n_int  = torch.stack(n_cols, dim=0).int()   # [C,5]
+
+    #             # 每个 comp_type、每个 col 一行
+    #             for k, name in enumerate(names):
+    #                 for j in range(N_COL):
+    #                     writer.writerow([s, name, j, int(n_int[j, k])])
+
+    #             # propagate
+    #             sum_bits   = n_int.sum(-1)
+    #             carry_bits = n_int[:, :2].sum(-1)
+    #             V = (sum_bits + torch.cat([torch.zeros(1, device=device),
+    #                                     carry_bits[:-1]])).unsqueeze(0)
 
 # ---------------------  integer solution extraction  -------------------
 # -----------------------------------------------------------------------

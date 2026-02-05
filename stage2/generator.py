@@ -1,7 +1,8 @@
 import torch, random
 from parameters import *
+from tqdm import trange
 
-torch.manual_seed(42)
+torch.manual_seed(5029)
 
 def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
     """
@@ -48,24 +49,46 @@ def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
         return torch.stack(padded, dim=0)  # [N_COL, n_bits]
 
     def loader():
-        a = b = 0
         total = 1 << n_bits
+        mask = total - 1
+        space = 1 << (2 * n_bits)
+
+        t = 0
+        stride = 0x9e3779b97f4a7c15  # 黄金比例常数，打散效果好
+        a = 1
+        b = -1
+
         while True:
             batch_bits = []
-            for _ in range(batch):
-                if exhaustive:
-                    bits = one_bitmap(a, b)
+            # a = 1
+            # b = -1
+            if exhaustive:
+                for _ in trange(batch, desc="Loading Test Data"):
+
+                    # hash 打散
+                    x = (t * stride) & (space - 1)
+                    a = (x >> n_bits) & mask
+                    b = x & mask
+                    t += 1
+                    
+                    # b+=1
+                    # if b == total:
+                    #     b = 1
+                    #     a+=1
                     # print(f"Operands: a = {a:0{n_bits}b} ({a}), b = {b:0{n_bits}b} ({b})")
-                    b += 1
-                    if b == total:
-                        b = 0
-                        a = (a + 1) % total
-                else:
+                    bits = one_bitmap(a, b)
+                    batch_bits.append(bits)
+            else:
+                for _ in range(batch):
                     a = torch.randint(0, total, ()).item()
                     b = torch.randint(0, total, ()).item()
+                    # b+=1
+                    # if b == total:
+                    #     b = 1
+                    #     a+=1
                     # print(f"Operands: a = {a:0{n_bits}b} ({a}), b = {b:0{n_bits}b} ({b})")
                     bits = one_bitmap(a, b)
-                batch_bits.append(bits)
+                    batch_bits.append(bits)
             BITS = torch.stack(batch_bits, dim=0)          # [B, N_COL, n_bits]
             # P0 = P0_const.expand(batch, -1)                # [B, N_COL]
             yield BITS
@@ -74,16 +97,22 @@ def IP_generator(n_bits: int, batch: int, exhaustive: bool = False):
 
 # test the loader
 if __name__ == "__main__":
-    n_bits = 5
+    n_bits = 30
     N_COL = 2 * n_bits - 1  # should equal N_COL globally
-    loader = IP_generator(n_bits=n_bits, batch=2)
+    loader = IP_generator(n_bits=n_bits, batch=10, exhaustive=False)
+    print("train1")
     BITS = next(loader)
+    print("train2")
+    BITS = next(loader)
+    
+    loader = IP_generator(n_bits=n_bits, batch=10, exhaustive=True)
+    print("test")
+    BITS = next(loader)
+    # print("BITS shape:", BITS.shape)  # [Batch, N_COL, n_bits]
 
-    print("BITS shape:", BITS.shape)  # [Batch, N_COL, n_bits]
-
-    for i in range(BITS.shape[0]):
-        print(f"\nSample #{i}:")
-        for j in range(BITS.shape[1]):
-            bits_in_col = BITS[i, j, :].tolist()
-            print(f"  Col {j}: bits = {bits_in_col}")
+    # for i in range(BITS.shape[0]):
+    #     print(f"\nSample #{i}:")
+    #     for j in range(BITS.shape[1]):
+    #         bits_in_col = BITS[i, j, :].tolist()
+    #         print(f"  Col {j}: bits = {bits_in_col}")
 

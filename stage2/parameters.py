@@ -1,11 +1,12 @@
 import torch
 
-if torch.cuda.is_available():
-    device = "cuda"                     # NVIDIA / AMD discrete GPU
-elif torch.backends.mps.is_available():
-    device = "mps"                      # Apple-silicon GPU
-else:
-    device = "cpu"                      # fallback
+# if torch.cuda.is_available():
+#     device = "cuda"                     # NVIDIA / AMD discrete GPU
+# elif torch.backends.mps.is_available():
+#     device = "mps"                      # Apple-silicon GPU
+# else:
+#     device = "cpu"                      # fallback
+device = "cpu"
 
 torch.manual_seed(0)
 

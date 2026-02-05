@@ -1,0 +1,186 @@
+==== Hard Conn ====
+
+-- Stage 0 --
+Col 0 : No compressor
+Col 1 : No compressor
+Col 2 : [1 0 2]
+Col 3 : [3 1 2 3]
+Col 4 : [1 0 3 1 3]
+Col 5 : [3 2 4 0 3 5]
+Col 6 : [1 0 2 6 5 2 5]
+Col 7 : [4 1 6 7 2 0 1 0]
+Col 8 : [1 0 1 7 0 6 0 2 8]
+Col 9 : [5 8 2 7 4 1 9 4 0 6]
+Col 10 : [ 9  1  2  8  5  8  0  6  4  9 10]
+Col 11 : [ 4  3  8  9 11  7  1 11  2 11  5 10]
+Col 12 : [ 6  0  3  2  0  9  4  3  1  1 12  1  0]
+Col 13 : [ 7  4  5  2  3  1  8  3 11  0 13 11 12  1]
+Col 14 : [ 2  7  9  2  9 13 13  1 11  1 14  5  0 14  4]
+Col 15 : [10  2 11 10  3  5  3  3 13 11  1 13  6 14  7  7]
+Col 16 : [ 6 11 10  9  3  4  4  1 10 13  1  3 14 12  2]
+Col 17 : [ 7  5  8  8  1 11  0  1  8  4 11  5 12 12]
+Col 18 : [ 7  1  7  9  5 12  5  0  9 12  3  8  2]
+Col 19 : [ 8  0  6  5  0 10  3  8  9  7  2  4]
+Col 20 : [ 1  0 10  3  7  9  4 10  2  2  9]
+Col 21 : [1 6 8 4 7 1 0 2 9 9]
+Col 22 : [7 1 2 2 7 0 7 8 5]
+Col 23 : [6 2 0 5 2 5 1 7]
+Col 24 : [1 0 3 3 4 6 5]
+Col 25 : [1 2 0 3 1 3]
+Col 26 : [0 4 0 2 1]
+Col 27 : [0 1 0 2]
+Col 28 : [2 0 1]
+Col 29 : [1 0]
+Col 30 : [0]
+Col 31 : No compressor
+Col 32 : No compressor
+Col 33 : No compressor
+Col 34 : No compressor
+
+-- Stage 1 --
+Col 0 : No compressor
+Col 1 : No compressor
+Col 2 : No compressor
+Col 3 : No compressor
+Col 4 : [0 3 3 4 1]
+Col 5 : [1 3 2 2]
+Col 6 : [2 1 0]
+Col 7 : [0 1 3 6 6 1 2]
+Col 8 : [1 0 2]
+Col 9 : [1 5 1 3 2 4]
+Col 10 : [5 2 4 5 2 3]
+Col 11 : [2 4 4 3 1 0 3 5 8 6]
+Col 12 : [0 3 1 0]
+Col 13 : [4 6 4 5 5 7 0 1]
+Col 14 : [7 0 3 7 6 3 6 5]
+Col 15 : [6 3 5 3 1 4 0]
+Col 16 : [8 5 6 1 8 0 7 7 1]
+Col 17 : [4 0 3 2 6 1 3]
+Col 18 : [2 6 3 6 7 1 0 4]
+Col 19 : [0 0 2 4 5 3]
+Col 20 : [2 2 4 6 3 0 4]
+Col 21 : [0 2 5 3 4 1 3]
+Col 22 : [2 9 9 5 9 3 7 2 4 0]
+Col 23 : [4 5 1 2 7 7 2 6]
+Col 24 : [2 1 3 2 1]
+Col 25 : [3 1 1 0]
+Col 26 : [3 2 0 1]
+Col 27 : [2 1 3 0]
+Col 28 : [1 0]
+Col 29 : [0 1]
+Col 30 : [0 1]
+Col 31 : No compressor
+Col 32 : No compressor
+Col 33 : No compressor
+Col 34 : No compressor
+
+-- Stage 2 --
+Col 0 : No compressor
+Col 1 : No compressor
+Col 2 : No compressor
+Col 3 : No compressor
+Col 4 : No compressor
+Col 5 : [0 1 3 2]
+Col 6 : [1 0]
+Col 7 : [0 1 2]
+Col 8 : [1 0 2]
+Col 9 : [2 0 1]
+Col 10 : [1 2 1 0]
+Col 11 : [0 4 4 3 3]
+Col 12 : [3 1 4 0 2]
+Col 13 : [1 0]
+Col 14 : [2 1 0 3]
+Col 15 : [2 0 4 3 0]
+Col 16 : [3 3 2 1]
+Col 17 : [2 0 0 1 4]
+Col 18 : [2 1 0 0]
+Col 19 : [2 1 0 4 4]
+Col 20 : [3 0 1 2]
+Col 21 : [4 2 0 1 3]
+Col 22 : [5 4 0 3 4 0 2]
+Col 23 : [2 1 3 0 4 0]
+Col 24 : [2 4 5 4 0 0 6]
+Col 25 : [0 2 1]
+Col 26 : [2 1 0]
+Col 27 : [1 0 2]
+Col 28 : [0 2 1]
+Col 29 : [1 0]
+Col 30 : [1 0]
+Col 31 : [0]
+Col 32 : No compressor
+Col 33 : No compressor
+Col 34 : No compressor
+
+-- Stage 3 --
+Col 0 : No compressor
+Col 1 : No compressor
+Col 2 : No compressor
+Col 3 : No compressor
+Col 4 : No compressor
+Col 5 : [1 2 0]
+Col 6 : [1 0]
+Col 7 : No compressor
+Col 8 : No compressor
+Col 9 : No compressor
+Col 10 : No compressor
+Col 11 : [3 4 2 1 0]
+Col 12 : No compressor
+Col 13 : [0 2 1]
+Col 14 : No compressor
+Col 15 : [0 1 2]
+Col 16 : No compressor
+Col 17 : [0 2 1]
+Col 18 : No compressor
+Col 19 : [1 0 2]
+Col 20 : [0 1]
+Col 21 : [0 1 1]
+Col 22 : [1 0 3 0]
+Col 23 : [3 2 0 1]
+Col 24 : [3 1 0 0]
+Col 25 : [1 2 1]
+Col 26 : [2 1 0]
+Col 27 : [0 2 1]
+Col 28 : [0 2 2]
+Col 29 : [1 0]
+Col 30 : [1 0]
+Col 31 : [1 0]
+Col 32 : No compressor
+Col 33 : No compressor
+Col 34 : No compressor
+
+-- Stage 4 --
+Col 0 : No compressor
+Col 1 : No compressor
+Col 2 : No compressor
+Col 3 : No compressor
+Col 4 : No compressor
+Col 5 : No compressor
+Col 6 : No compressor
+Col 7 : No compressor
+Col 8 : No compressor
+Col 9 : No compressor
+Col 10 : No compressor
+Col 11 : No compressor
+Col 12 : No compressor
+Col 13 : No compressor
+Col 14 : No compressor
+Col 15 : No compressor
+Col 16 : No compressor
+Col 17 : No compressor
+Col 18 : No compressor
+Col 19 : No compressor
+Col 20 : No compressor
+Col 21 : No compressor
+Col 22 : No compressor
+Col 23 : No compressor
+Col 24 : No compressor
+Col 25 : No compressor
+Col 26 : No compressor
+Col 27 : No compressor
+Col 28 : No compressor
+Col 29 : No compressor
+Col 30 : No compressor
+Col 31 : No compressor
+Col 32 : No compressor
+Col 33 : No compressor
+Col 34 : No compressor
